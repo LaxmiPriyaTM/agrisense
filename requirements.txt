@@ -1,0 +1,28 @@
+# AgriSense — Python Dependencies
+# SEAI Individual Project — SDG 2: Zero Hunger
+# ================================================
+
+# Core ML/DL Framework
+torch==2.2.0
+torchvision==0.17.0
+torchaudio==2.2.0
+
+# Image Processing
+Pillow==10.2.0
+numpy==1.26.4
+opencv-python-headless==4.9.0.80
+
+# Web Framework
+Flask==3.0.2
+flask-cors==4.0.0
+Werkzeug==3.0.1
+gunicorn==21.2.0
+
+# LLM Integration
+groq==0.4.2
+
+# Environment & Config
+python-dotenv==1.0.1
+
+# Utilities
+requests==2.31.0

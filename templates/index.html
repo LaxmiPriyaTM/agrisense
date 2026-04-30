@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriSense — AI Crop Disease Detection</title>
+    <meta name="description" content="AI-powered crop disease detection. Upload a leaf photo for instant diagnosis.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <span class="logo-icon">🌾</span>
+                <span class="logo-text">AgriSense <span class="logo-badge">AI</span></span>
+            </div>
+            <div class="nav-links">
+                <span class="sdg-badge">🌍 SDG 2 — Zero Hunger</span>
+                <span class="status-indicator" id="statusIndicator">
+                    <span class="status-dot"></span>
+                    <span id="statusText">Connecting...</span>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-tag">Powered by EfficientNetB3 + Llama 3</div>
+            <h1 class="hero-title">Detect Crop Diseases<br><span class="gradient-text">Instantly with AI</span></h1>
+            <p class="hero-subtitle">Upload a photo of your plant leaf and get instant disease diagnosis with AI-powered treatment recommendations.</p>
+            <div class="hero-stats">
+                <div class="stat"><strong>38</strong><span>Disease Classes</span></div>
+                <div class="stat"><strong>99%</strong><span>Accuracy</span></div>
+                <div class="stat"><strong>14</strong><span>Crop Types</span></div>
+                <div class="stat"><strong>&lt;2s</strong><span>Response Time</span></div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="content-grid">
+            <div class="panel upload-panel">
+                <div class="panel-header">
+                    <h2>📸 Scan Your Leaf</h2>
+                    <p>Upload a clear photo of the affected leaf</p>
+                </div>
+                <div class="upload-zone" id="uploadZone">
+                    <input type="file" id="imageInput" accept="image/*" hidden>
+                    <div class="upload-placeholder" id="uploadPlaceholder">
+                        <div class="upload-icon">🍃</div>
+                        <p class="upload-text">Drag & drop or <strong>click to upload</strong></p>
+                        <p class="upload-hint">JPG, PNG, WEBP • Max 10MB</p>
+                    </div>
+                    <img id="previewImage" class="preview-image hidden" alt="Leaf preview">
+                    <div class="preview-overlay hidden" id="previewOverlay">
+                        <button class="btn btn-secondary" id="changeImageBtn">Change Image</button>
+                    </div>
+                </div>
+                <div class="options-section">
+                    <label class="option-label">Treatment Preference</label>
+                    <div class="radio-group">
+                        <label class="radio-option"><input type="radio" name="preference" value="organic"> 🌿 Organic</label>
+                        <label class="radio-option active"><input type="radio" name="preference" value="balanced" checked> ⚖️ Balanced</label>
+                        <label class="radio-option"><input type="radio" name="preference" value="chemical"> 🧪 Chemical</label>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-full" id="analyzeBtn" disabled>
+                    <span class="btn-icon">🔬</span>
+                    <span class="btn-text">Analyze Disease</span>
+                </button>
+                <div class="crops-info">
+                    <p class="crops-label">Supported Crops</p>
+                    <div class="crops-tags">
+                        <span class="crop-tag">🍎 Apple</span><span class="crop-tag">🍇 Grape</span>
+                        <span class="crop-tag">🍅 Tomato</span><span class="crop-tag">🥔 Potato</span>
+                        <span class="crop-tag">🌽 Corn</span><span class="crop-tag">🍑 Peach</span>
+                        <span class="crop-tag">🫑 Pepper</span><span class="crop-tag">+7 more</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel results-panel" id="resultsPanel">
+                <div class="results-placeholder" id="resultsPlaceholder">
+                    <div class="placeholder-icon">🌱</div>
+                    <h3>Upload a leaf image to begin</h3>
+                    <p>Your diagnosis results will appear here</p>
+                </div>
+                <div class="loading-state hidden" id="loadingState">
+                    <div class="loader-ring"></div>
+                    <p class="loading-text">Analyzing your leaf...</p>
+                    <div class="loading-steps">
+                        <div class="step" id="step1">🔍 Processing image</div>
+                        <div class="step" id="step2">🧠 Running AI model</div>
+                        <div class="step" id="step3">💬 Generating advisory</div>
+                    </div>
+                </div>
+                <div class="results-content hidden" id="resultsContent">
+                    <div class="disease-badge" id="diseaseBadge">
+                        <div class="badge-icon" id="badgeIcon">🦠</div>
+                        <div class="badge-info">
+                            <div class="crop-name" id="cropName">—</div>
+                            <div class="disease-name" id="diseaseName">—</div>
+                        </div>
+                        <div class="severity-chip" id="severityChip">—</div>
+                    </div>
+                    <div class="confidence-section">
+                        <div class="confidence-header">
+                            <span>AI Confidence</span>
+                            <span class="confidence-value" id="confidenceValue">—</span>
+                        </div>
+                        <div class="confidence-bar">
+                            <div class="confidence-fill" id="confidenceFill" style="width:0%"></div>
+                        </div>
+                        <p class="confidence-msg" id="confidenceMsg">—</p>
+                    </div>
+                    <div class="top-predictions">
+                        <h4>Top 3 Predictions</h4>
+                        <div id="predictionsList"></div>
+                    </div>
+                    <div class="advisory-section" id="advisorySection">
+                        <div class="advisory-header" onclick="toggleAdvisory()">
+                            <span>🤖 AI Treatment Advisory</span>
+                            <span class="toggle-icon" id="advisoryToggle">▼</span>
+                        </div>
+                        <div class="advisory-content hidden" id="advisoryContent">
+                            <div id="advisoryText" class="markdown-output"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-section">
+            <div class="panel chat-panel">
+                <div class="panel-header">
+                    <h2>🤖 AgriSense AI Advisor</h2>
+                    <p>Ask anything about your crop, diseases, or farming practices</p>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="chat-bubble bot-bubble">
+                        <div class="bubble-avatar">🌾</div>
+                        <div class="bubble-content">Hello! I'm AgriSense AI. I can help you understand crop diseases, suggest treatments, and answer farming questions. How can I help you today?</div>
+                    </div>
+                </div>
+                <div class="chat-quick-replies" id="quickReplies">
+                    <button class="quick-btn" onclick="sendQuick('What are symptoms of Late Blight?')">Late Blight?</button>
+                    <button class="quick-btn" onclick="sendQuick('How to prevent fungal diseases organically?')">Prevent fungal diseases?</button>
+                    <button class="quick-btn" onclick="sendQuick('Best practices for tomato farming?')">Tomato tips?</button>
+                    <button class="quick-btn" onclick="sendQuick('When should I consult an agronomist?')">Call expert?</button>
+                </div>
+                <div class="chat-input-area">
+                    <textarea id="chatInput" class="chat-input" placeholder="Ask about your crop or disease..." rows="2" maxlength="1000"></textarea>
+                    <button class="btn btn-primary chat-send-btn" id="sendBtn" onclick="sendMessage()">➤ Send</button>
+                </div>
+            </div>
+            <div class="panel history-panel">
+                <div class="panel-header">
+                    <h2>📋 Scan History</h2>
+                    <button class="btn btn-ghost" onclick="clearHistory()">Clear</button>
+                </div>
+                <div class="history-list" id="historyList">
+                    <p class="no-history">No scans yet. Upload a leaf to get started!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>🌾 <strong>AgriSense</strong> — Built for UN SDG 2: Zero Hunger</p>
+            <p>EfficientNetB3 + Groq Llama 3 • SEAI Individual Project 2025</p>
+            <p class="footer-disclaimer">⚠️ For severe cases, always consult a professional agronomist.</p>
+        </div>
+    </footer>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

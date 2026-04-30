@@ -1,0 +1,344 @@
+{
+  "Apple___Apple_scab": {
+    "crop": "Apple", "disease": "Apple Scab",
+    "severity": "MEDIUM",
+    "symptoms": "Olive-green to brown spots on leaves and fruit. Scabby lesions on fruit surface.",
+    "organic_treatment": ["Spray neem oil (2%) every 7 days", "Apply sulfur-based fungicide", "Remove and destroy infected leaves"],
+    "chemical_treatment": ["Captan 50 WP @ 2g/L", "Mancozeb 75 WP @ 2.5g/L", "Myclobutanil (Rally)"],
+    "prevention": ["Plant resistant varieties", "Prune for air circulation", "Apply dormant copper spray"],
+    "urgency_days": 7
+  },
+  "Apple___Black_rot": {
+    "crop": "Apple", "disease": "Black Rot",
+    "severity": "HIGH",
+    "symptoms": "Purple spots on leaves expanding to brown, black rot on fruit, cankers on branches.",
+    "organic_treatment": ["Prune all infected wood 15cm below canker", "Spray copper hydroxide", "Apply Bordeaux mixture"],
+    "chemical_treatment": ["Captan 80 WDG", "Topsin-M (thiophanate-methyl)", "Ziram fungicide"],
+    "prevention": ["Remove mummified fruit", "Maintain tree vigor through fertilization", "Avoid bark injuries"],
+    "urgency_days": 3
+  },
+  "Apple___Cedar_apple_rust": {
+    "crop": "Apple", "disease": "Cedar Apple Rust",
+    "severity": "MEDIUM",
+    "symptoms": "Bright orange-yellow spots on upper leaf surface, tube-like structures on underside.",
+    "organic_treatment": ["Apply neem oil preventively", "Remove nearby cedar/juniper trees if possible", "Sulfur fungicide sprays"],
+    "chemical_treatment": ["Myclobutanil", "Propiconazole", "Fenbuconazole"],
+    "prevention": ["Plant resistant varieties (Liberty, Freedom)", "Remove galls from nearby cedars in spring"],
+    "urgency_days": 14
+  },
+  "Apple___healthy": {
+    "crop": "Apple", "disease": "Healthy",
+    "severity": "NONE",
+    "symptoms": "No disease detected. Plant appears healthy.",
+    "organic_treatment": ["Continue regular monitoring", "Apply compost for soil health"],
+    "chemical_treatment": ["No treatment needed"],
+    "prevention": ["Regular inspection every 2 weeks", "Proper irrigation", "Balanced NPK fertilization"],
+    "urgency_days": 0
+  },
+  "Blueberry___healthy": {
+    "crop": "Blueberry", "disease": "Healthy",
+    "severity": "NONE",
+    "symptoms": "No disease detected.",
+    "organic_treatment": ["Maintain soil pH 4.5-5.5", "Apply pine bark mulch"],
+    "chemical_treatment": ["No treatment needed"],
+    "prevention": ["Test soil pH annually", "Proper drainage", "Prune annually"],
+    "urgency_days": 0
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "crop": "Cherry", "disease": "Powdery Mildew",
+    "severity": "MEDIUM",
+    "symptoms": "White powdery coating on leaves, young shoots, and fruit. Leaves may curl.",
+    "organic_treatment": ["Spray potassium bicarbonate (1 tbsp/gallon)", "Neem oil spray weekly", "Milk solution (1:9 dilution)"],
+    "chemical_treatment": ["Sulfur dust/spray", "Myclobutanil", "Quinoxyfen"],
+    "prevention": ["Plant in full sun", "Ensure air circulation", "Avoid excess nitrogen"],
+    "urgency_days": 7
+  },
+  "Cherry_(including_sour)___healthy": {
+    "crop": "Cherry", "disease": "Healthy",
+    "severity": "NONE",
+    "symptoms": "No disease detected.",
+    "organic_treatment": ["Regular monitoring", "Compost application"],
+    "chemical_treatment": ["No treatment needed"],
+    "prevention": ["Annual pruning", "Proper spacing"],
+    "urgency_days": 0
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "crop": "Corn", "disease": "Gray Leaf Spot",
+    "severity": "HIGH",
+    "symptoms": "Rectangular gray-tan lesions between leaf veins. Lesions have yellow borders.",
+    "organic_treatment": ["Crop rotation (avoid corn-after-corn)", "Destroy crop residue after harvest", "Apply compost to improve soil health"],
+    "chemical_treatment": ["Azoxystrobin", "Pyraclostrobin", "Propiconazole"],
+    "prevention": ["Plant resistant hybrids", "Rotate with soybean/wheat", "Reduce leaf wetness duration"],
+    "urgency_days": 5
+  },
+  "Corn_(maize)___Common_rust_": {
+    "crop": "Corn", "disease": "Common Rust",
+    "severity": "MEDIUM",
+    "symptoms": "Cinnamon-brown powdery pustules on both leaf surfaces. Pustules turn black late season.",
+    "organic_treatment": ["Apply neem oil at early stage", "Crop rotation", "Remove severely infected plants"],
+    "chemical_treatment": ["Mancozeb 75 WP", "Azoxystrobin + Propiconazole", "Chlorothalonil"],
+    "prevention": ["Plant rust-resistant hybrids", "Early planting to avoid peak infection period"],
+    "urgency_days": 10
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "crop": "Corn", "disease": "Northern Leaf Blight",
+    "severity": "HIGH",
+    "symptoms": "Long cigar-shaped gray-green to tan lesions 2.5-15cm. Starts on lower leaves.",
+    "organic_treatment": ["Remove infected debris", "Biological fungicide (Bacillus subtilis)", "Crop rotation"],
+    "chemical_treatment": ["Azoxystrobin", "Trifloxystrobin", "Propiconazole"],
+    "prevention": ["Resistant hybrids", "Crop rotation", "Manage residue"],
+    "urgency_days": 5
+  },
+  "Corn_(maize)___healthy": {
+    "crop": "Corn", "disease": "Healthy",
+    "severity": "NONE",
+    "symptoms": "No disease detected.",
+    "organic_treatment": ["Continue monitoring"],
+    "chemical_treatment": ["No treatment needed"],
+    "prevention": ["Balanced fertilization", "Proper plant spacing"],
+    "urgency_days": 0
+  },
+  "Grape___Black_rot": {
+    "crop": "Grape", "disease": "Black Rot",
+    "severity": "CRITICAL",
+    "symptoms": "Brown circular lesions on leaves with black border. Infected berries shrivel to black mummies.",
+    "organic_treatment": ["Remove all mummified berries immediately", "Apply Bordeaux mixture", "Prune for air flow"],
+    "chemical_treatment": ["Mancozeb", "Captan", "Myclobutanil"],
+    "prevention": ["Canopy management", "Remove mummies before bud break", "Apply protectant sprays"],
+    "urgency_days": 2
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "crop": "Grape", "disease": "Esca (Black Measles)",
+    "severity": "CRITICAL",
+    "symptoms": "Tiger-stripe discoloration on leaves. Berries show black spotting. Wood shows internal decay.",
+    "organic_treatment": ["Remove and destroy infected wood", "Paint pruning wounds with wound sealant", "No effective organic control"],
+    "chemical_treatment": ["No reliable chemical treatment — prevention is key", "Flusilazole (limited efficacy)"],
+    "prevention": ["Use clean certified planting material", "Avoid large pruning wounds", "Use double pruning technique"],
+    "urgency_days": 1
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "crop": "Grape", "disease": "Leaf Blight",
+    "severity": "HIGH",
+    "symptoms": "Dark brown irregular lesions on older leaves. White growth on underside.",
+    "organic_treatment": ["Copper-based sprays", "Neem oil (biweekly)", "Remove infected leaves"],
+    "chemical_treatment": ["Copper oxychloride", "Mancozeb 75 WP", "Cymoxanil"],
+    "prevention": ["Canopy management", "Avoid overhead irrigation", "Apply preventive copper sprays"],
+    "urgency_days": 4
+  },
+  "Grape___healthy": {
+    "crop": "Grape", "disease": "Healthy",
+    "severity": "NONE",
+    "symptoms": "No disease detected.",
+    "organic_treatment": ["Regular canopy management"],
+    "chemical_treatment": ["No treatment needed"],
+    "prevention": ["Seasonal spray calendar", "Soil nutrition management"],
+    "urgency_days": 0
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "crop": "Orange", "disease": "Citrus Greening (HLB)",
+    "severity": "CRITICAL",
+    "symptoms": "Mottled yellowing on leaves (asymmetric). Small, misshapen bitter fruit. Twig dieback.",
+    "organic_treatment": ["No cure available — manage psyllid vector with kaolin clay", "Remove and destroy infected trees to prevent spread"],
+    "chemical_treatment": ["Control Asian Citrus Psyllid: Imidacloprid soil drench", "Oxytetracycline injections (limited)"],
+    "prevention": ["Use certified disease-free budwood", "Control psyllid populations aggressively", "Quarantine protocols"],
+    "urgency_days": 1
+  },
+  "Peach___Bacterial_spot": {
+    "crop": "Peach", "disease": "Bacterial Spot",
+    "severity": "HIGH",
+    "symptoms": "Water-soaked lesions on leaves that turn purple-brown. Shot-hole appearance. Fruit lesions.",
+    "organic_treatment": ["Copper hydroxide sprays at petal fall", "Avoid overhead irrigation", "Remove infected plant parts"],
+    "chemical_treatment": ["Copper-based bactericides", "Oxytetracycline (Mycoshield)", "Kasugamycin"],
+    "prevention": ["Plant resistant varieties", "Windbreaks to reduce spread", "Avoid high-nitrogen fertilization"],
+    "urgency_days": 5
+  },
+  "Peach___healthy": {
+    "crop": "Peach", "disease": "Healthy",
+    "severity": "NONE",
+    "symptoms": "No disease detected.",
+    "organic_treatment": ["Regular monitoring"],
+    "chemical_treatment": ["No treatment needed"],
+    "prevention": ["Annual dormant spray", "Proper thinning"],
+    "urgency_days": 0
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "crop": "Bell Pepper", "disease": "Bacterial Spot",
+    "severity": "HIGH",
+    "symptoms": "Small water-soaked spots on leaves that turn brown with yellow halos. Fruit lesions.",
+    "organic_treatment": ["Copper hydroxide spray every 5-7 days", "Remove infected plants", "Improve drainage"],
+    "chemical_treatment": ["Copper-based bactericides", "Acibenzolar-S-methyl (Actigard)", "Mancozeb + copper mix"],
+    "prevention": ["Use certified disease-free seed", "Avoid overhead watering", "Crop rotation 2-3 years"],
+    "urgency_days": 4
+  },
+  "Pepper,_bell___healthy": {
+    "crop": "Bell Pepper", "disease": "Healthy",
+    "severity": "NONE",
+    "symptoms": "No disease detected.",
+    "organic_treatment": ["Regular monitoring"],
+    "chemical_treatment": ["No treatment needed"],
+    "prevention": ["Drip irrigation", "Crop rotation"],
+    "urgency_days": 0
+  },
+  "Potato___Early_blight": {
+    "crop": "Potato", "disease": "Early Blight",
+    "severity": "MEDIUM",
+    "symptoms": "Dark brown target-board lesions (concentric rings) on older leaves. Yellow halo around lesion.",
+    "organic_treatment": ["Spray neem oil biweekly", "Apply copper fungicide", "Remove lower infected leaves"],
+    "chemical_treatment": ["Mancozeb 75 WP @ 2.5g/L", "Chlorothalonil", "Azoxystrobin"],
+    "prevention": ["Plant certified seed", "Adequate spacing", "Destroy crop residue post-harvest"],
+    "urgency_days": 7
+  },
+  "Potato___Late_blight": {
+    "crop": "Potato", "disease": "Late Blight",
+    "severity": "CRITICAL",
+    "symptoms": "Water-soaked greenish-black lesions. White sporulation on underside in humid conditions. Rapidly spreads.",
+    "organic_treatment": ["Remove and destroy infected foliage immediately", "Apply Bordeaux mixture (1:1:100)", "Avoid overhead irrigation"],
+    "chemical_treatment": ["Metalaxyl + Mancozeb (Ridomil Gold)", "Dimethomorph", "Famoxadone + Cymoxanil"],
+    "prevention": ["Plant certified blight-resistant varieties", "Ensure proper drainage", "Prophylactic sprays in humid weather"],
+    "urgency_days": 1
+  },
+  "Potato___healthy": {
+    "crop": "Potato", "disease": "Healthy",
+    "severity": "NONE",
+    "symptoms": "No disease detected.",
+    "organic_treatment": ["Regular hilling", "Balanced fertilization"],
+    "chemical_treatment": ["No treatment needed"],
+    "prevention": ["Use certified seed potatoes", "Crop rotation"],
+    "urgency_days": 0
+  },
+  "Raspberry___healthy": {
+    "crop": "Raspberry", "disease": "Healthy",
+    "severity": "NONE",
+    "symptoms": "No disease detected.",
+    "organic_treatment": ["Seasonal pruning"],
+    "chemical_treatment": ["No treatment needed"],
+    "prevention": ["Good air circulation", "Proper training"],
+    "urgency_days": 0
+  },
+  "Soybean___healthy": {
+    "crop": "Soybean", "disease": "Healthy",
+    "severity": "NONE",
+    "symptoms": "No disease detected.",
+    "organic_treatment": ["Inoculant application for nitrogen fixation"],
+    "chemical_treatment": ["No treatment needed"],
+    "prevention": ["Crop rotation", "Balanced fertilization"],
+    "urgency_days": 0
+  },
+  "Squash___Powdery_mildew": {
+    "crop": "Squash", "disease": "Powdery Mildew",
+    "severity": "MEDIUM",
+    "symptoms": "White powdery patches on upper leaf surfaces. Leaves yellow and wither.",
+    "organic_treatment": ["Spray 1:9 milk-water solution weekly", "Potassium bicarbonate spray", "Neem oil biweekly"],
+    "chemical_treatment": ["Sulfur dust/spray", "Myclobutanil", "Azoxystrobin"],
+    "prevention": ["Adequate spacing", "Avoid overhead watering", "Plant resistant varieties"],
+    "urgency_days": 7
+  },
+  "Strawberry___Leaf_scorch": {
+    "crop": "Strawberry", "disease": "Leaf Scorch",
+    "severity": "MEDIUM",
+    "symptoms": "Small purple spots on upper leaf surface that enlarge. Leaves appear scorched/reddish.",
+    "organic_treatment": ["Remove infected leaves", "Neem oil spray", "Improve air circulation"],
+    "chemical_treatment": ["Captan", "Myclobutanil", "Pyraclostrobin"],
+    "prevention": ["Avoid overhead irrigation", "Remove old foliage after harvest", "Renovate beds annually"],
+    "urgency_days": 10
+  },
+  "Strawberry___healthy": {
+    "crop": "Strawberry", "disease": "Healthy",
+    "severity": "NONE",
+    "symptoms": "No disease detected.",
+    "organic_treatment": ["Regular runner removal"],
+    "chemical_treatment": ["No treatment needed"],
+    "prevention": ["Proper mulching", "Drip irrigation"],
+    "urgency_days": 0
+  },
+  "Tomato___Bacterial_spot": {
+    "crop": "Tomato", "disease": "Bacterial Spot",
+    "severity": "HIGH",
+    "symptoms": "Small dark water-soaked spots on leaves, stems, and fruit. Yellow halos around spots.",
+    "organic_treatment": ["Copper-based bactericide spray", "Remove infected plant debris", "Improve drainage"],
+    "chemical_treatment": ["Copper hydroxide", "Streptomycin sulfate", "Kasugamycin"],
+    "prevention": ["Use disease-free seed", "Avoid overhead irrigation", "Crop rotation 3 years"],
+    "urgency_days": 4
+  },
+  "Tomato___Early_blight": {
+    "crop": "Tomato", "disease": "Early Blight",
+    "severity": "MEDIUM",
+    "symptoms": "Dark concentric ring lesions on older leaves. Yellow halo around lesion. Lesions merge.",
+    "organic_treatment": ["Neem oil spray weekly", "Remove lower leaves", "Compost mulch to reduce splash"],
+    "chemical_treatment": ["Mancozeb 75 WP", "Chlorothalonil (Bravo)", "Azoxystrobin"],
+    "prevention": ["Stake plants for air circulation", "Mulch soil surface", "Crop rotation"],
+    "urgency_days": 7
+  },
+  "Tomato___Late_blight": {
+    "crop": "Tomato", "disease": "Late Blight",
+    "severity": "CRITICAL",
+    "symptoms": "Large water-soaked dark lesions on leaves. White sporulation. Fruit rots rapidly.",
+    "organic_treatment": ["Remove and bag infected parts immediately", "Bordeaux mixture spray", "Improve drainage urgently"],
+    "chemical_treatment": ["Metalaxyl + Mancozeb", "Dimethomorph", "Fluopicolide (Presidio)"],
+    "prevention": ["Plant resistant varieties", "Prophylactic copper sprays in wet weather", "Good drainage"],
+    "urgency_days": 1
+  },
+  "Tomato___Leaf_Mold": {
+    "crop": "Tomato", "disease": "Leaf Mold",
+    "severity": "MEDIUM",
+    "symptoms": "Yellow patches on upper leaf surface. Olive-green/brown velvety mold on underside.",
+    "organic_treatment": ["Increase air circulation", "Neem oil spray", "Reduce humidity in greenhouse"],
+    "chemical_treatment": ["Copper fungicide", "Chlorothalonil", "Mancozeb"],
+    "prevention": ["Ventilate greenhouses", "Avoid leaf wetness", "Space plants adequately"],
+    "urgency_days": 7
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "crop": "Tomato", "disease": "Septoria Leaf Spot",
+    "severity": "MEDIUM",
+    "symptoms": "Many small circular spots with dark borders and light centers. Severe defoliation.",
+    "organic_treatment": ["Remove infected leaves immediately", "Copper-based fungicide", "Neem oil spray"],
+    "chemical_treatment": ["Chlorothalonil", "Mancozeb", "Azoxystrobin"],
+    "prevention": ["Avoid overhead watering", "Mulch soil", "Crop rotation 3+ years"],
+    "urgency_days": 7
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "crop": "Tomato", "disease": "Spider Mites",
+    "severity": "MEDIUM",
+    "symptoms": "Fine stippling on leaves. Webbing on underside. Bronze/yellow discoloration.",
+    "organic_treatment": ["Spray water to dislodge mites", "Insecticidal soap spray", "Neem oil", "Release predatory mites (Phytoseiulus)"],
+    "chemical_treatment": ["Abamectin", "Bifenazate (Acramite)", "Spiromesifen"],
+    "prevention": ["Avoid dusty conditions", "Maintain adequate moisture", "Avoid excess nitrogen"],
+    "urgency_days": 5
+  },
+  "Tomato___Target_Spot": {
+    "crop": "Tomato", "disease": "Target Spot",
+    "severity": "HIGH",
+    "symptoms": "Circular brown lesions with concentric rings. Yellow halo. Lesions on all plant parts.",
+    "organic_treatment": ["Remove infected plant material", "Copper fungicide spray", "Improve air circulation"],
+    "chemical_treatment": ["Azoxystrobin", "Fluxapyroxad", "Boscalid"],
+    "prevention": ["Crop rotation", "Stake plants", "Balanced fertilization"],
+    "urgency_days": 5
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "crop": "Tomato", "disease": "Yellow Leaf Curl Virus (TYLCV)",
+    "severity": "CRITICAL",
+    "symptoms": "Severe leaf curling and yellowing. Stunted growth. Transmitted by whiteflies.",
+    "organic_treatment": ["Control whitefly vector: Yellow sticky traps", "Neem oil spray for whiteflies", "Remove and destroy infected plants"],
+    "chemical_treatment": ["Imidacloprid for whitefly control", "Thiamethoxam", "No cure — vector control only"],
+    "prevention": ["Plant resistant varieties", "Use insect-proof netting", "Certified virus-free transplants"],
+    "urgency_days": 1
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "crop": "Tomato", "disease": "Tomato Mosaic Virus (ToMV)",
+    "severity": "HIGH",
+    "symptoms": "Mosaic pattern of light/dark green on leaves. Leaf distortion. Reduced fruit size.",
+    "organic_treatment": ["Remove and destroy infected plants", "Wash hands/tools with soap before handling", "No cure available"],
+    "chemical_treatment": ["No chemical cure — prevention only", "Control aphid/thrips vectors with insecticide"],
+    "prevention": ["Use certified virus-free seed", "Resistant varieties", "Disinfect tools regularly"],
+    "urgency_days": 2
+  },
+  "Tomato___healthy": {
+    "crop": "Tomato", "disease": "Healthy",
+    "severity": "NONE",
+    "symptoms": "No disease detected. Your tomato plant is healthy!",
+    "organic_treatment": ["Continue regular monitoring every 2 weeks"],
+    "chemical_treatment": ["No treatment needed"],
+    "prevention": ["Maintain proper irrigation", "Balanced NPK (5-10-10)", "Stake plants for support"],
+    "urgency_days": 0
+  }
+}
