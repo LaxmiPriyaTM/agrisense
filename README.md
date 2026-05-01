@@ -79,7 +79,7 @@ chmod +x run.sh
 
 ```bash
 # 1. Clone & enter directory
-git clone https://github.com/YOUR_USERNAME/agrisense.git
+git clone https://github.com/LaxmiPriyaTM/agrisense.git
 cd agrisense
 
 # 2. Create virtual environment
@@ -131,9 +131,7 @@ agrisense/
 │   └── js/app.js             ← Frontend logic
 │
 ├── uploads/                  ← Temporary image uploads (gitignored)
-│
-└── notebooks/
-    └── training_demo.ipynb   ← Google Colab training notebook
+
 ```
 
 ---
