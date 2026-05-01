@@ -60,7 +60,7 @@ EfficientNetB3   Groq LLM (Llama3-70B)
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/agrisense.git
+git clone https://github.com/LaxmiPriyaTM/agrisense.git
 cd agrisense
 
 # 2. Set up environment
