@@ -254,8 +254,8 @@ Clear session scan history.
 
 **DockerHub:**
 ```bash
-docker pull your-username/agrisense:latest
-docker run -p 5000:5000 --env GROQ_API_KEY=your_key your-username/agrisense:latest
+docker pull laxmipriyara2311026050018/agrisense:latest
+docker run -p 5000:5000 --env GROQ_API_KEY=your_key laxmipriyara2311026050018/agrisense:latest
 ```
 
 ---
@@ -300,15 +300,6 @@ python model/train.py
 | API Response Time | < 2s (with LLM) |
 | Docker Image Size | ~3GB |
 | Memory Usage | ~2GB (model loaded) |
-
----
-
-## 📄 Research Paper
-
-See `paper/agrisense_ieee_paper.pdf` — 5-page IEEE-format research paper documenting:
-- System architecture & methodology
-- Experimental results & comparisons
-- SDG impact analysis
 
 ---
 
